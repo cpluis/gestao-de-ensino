@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppGestaoDeEnsino</string>
+    <string name="formato_invalido_v1">Formato de correo inválido!</string>
+    <string name="txtPreeCamposSubstitutiva_v1">Fill in the replacement field!</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#E4EDEDE7"
+    tools:context=".Activity.FormularioActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="95dp"
+        android:layout_height="144dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/etMatricula"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <EditText
+        android:id="@+id/etNota1"
+        android:layout_width="229dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/digite_a_N1_do_aluno_v1"
+        android:inputType="number"
+        android:maxLength="2"
+        android:minLines="1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMatricula" />
+
+    <EditText
+        android:id="@+id/etNomeAluno"
+        android:layout_width="489dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/digite_o_nome_do_aluno_v1"
+        android:inputType="textCapWords"
+        android:maxLength="20"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etMatricula"
+        android:layout_width="209dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:format="integer"
+        android:hint="@string/digite_a_matricula_do_aluno_v1"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeAluno" />
+
+    <EditText
+        android:id="@+id/etNota2"
+        android:layout_width="332dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/digite_a_N2_do_aluno_v1"
+        android:inputType="number"
+        android:maxLength="2"
+        android:minLines="1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etNota1"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeAluno" />
+
+    <EditText
+        android:id="@+id/etmlObservacao"
+        android:layout_width="336dp"
+        android:layout_height="94dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="text"
+        android:text="@string/observacao"
+        app:layout_constraintEnd_toStartOf="@+id/btnSalvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNota1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/campos_opcional_v1"
+        app:layout_constraintEnd_toStartOf="@+id/etNota1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="204dp"
+        android:layout_weight="1"
+        android:background="#EC0505"
+        android:text="@string/salvar_v1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNota2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

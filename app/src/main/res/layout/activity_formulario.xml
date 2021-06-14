@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4EDEDE7"
+    android:layout_margin="10dp"
+    tools:context=".Activity.FormularioActivity">
+
+
+    <EditText
+        android:id="@+id/etMatricula"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:format="integer"
+        android:hint="@string/digite_a_matricula_do_aluno_v1"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeAluno" />
+
+    <EditText
+        android:id="@+id/etNomeAluno"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/digite_o_nome_do_aluno_v1"
+        android:inputType="textCapWords"
+        android:maxLength="20"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNota1"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/digite_a_N1_do_aluno_v1"
+        android:inputType="number"
+        android:maxLength="2"
+        android:minLines="1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMatricula" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="200dp"
+        android:layout_weight="1"
+        android:background="#EC0505"
+        android:text="@string/salvar_v1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNota2" />
+
+    <EditText
+        android:id="@+id/etNota2"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/digite_a_N2_do_aluno_v1"
+        android:inputType="number"
+        android:maxLength="2"
+        android:minLines="1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNota1" />
+
+    <EditText
+        android:id="@+id/etmlObservacao"
+        android:layout_width="336dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="text"
+        android:text="@string/observacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNota2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/campos_opcional_v1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNota2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
