@@ -7,6 +7,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.br.gestao_de_ensino.Activity.util.ConfigInternet;
 import com.br.gestao_de_ensino.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -22,8 +30,11 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import loginFirebase.LoginActivity;
 import model.GestaoDeEnsinoDAO;
@@ -34,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private RelativeLayout llFundoLista;
     private AdapterGestaoDeEnsino adapter;
     private List<GestaoDeEnsino> listaGestaoDeEnsinos;
+    RequestQueue requestQueue ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button btVerificaRecuperacao = findViewById(R.id.btVerificaRecuperacao);
         Button btnQtdRecuperacao = findViewById(R.id.btnQtdRecuperacao);
+
+        requestQueue = Volley.newRequestQueue(this);
 
         FloatingActionButton fab = findViewById(R.id.fab);
 
@@ -57,13 +71,11 @@ public class MainActivity extends AppCompatActivity {
         btVerificaRecuperacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 if(verificaSeTemAlgo()){
                     naoHaRecuperacao();
                 }else{
                     Intent intent = new Intent(MainActivity.this, VerificaPorcentagemAlunosActivity.class);
                     startActivity(intent);
-
                 }
             }
         });
@@ -91,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 GestaoDeEnsino gestaoDeEnsinoSelecionado = listaGestaoDeEnsinos.get(position);
-
                 Intent intent = new Intent(MainActivity.this, FormularioActivity.class);
                 intent.putExtra("acao", "editar");
                 intent.putExtra("idGestaoDeEnsino", gestaoDeEnsinoSelecionado.id);
@@ -104,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
                 GestaoDeEnsino gestaoDeEnsinoSelecionado = listaGestaoDeEnsinos.get(position);
                 excluirAluno(gestaoDeEnsinoSelecionado);
+
                 return true;
             }
         });
@@ -160,12 +172,48 @@ public class MainActivity extends AppCompatActivity {
         alerta.setPositiveButton(R.string.txtSim_v1, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
+
+                String id = String.valueOf(gestaoDeEnsino.id);
+                deleteBanco(id);
                 GestaoDeEnsinoDAO.excluir(gestaoDeEnsino.id, MainActivity.this);
                 carregarAluno();
             }
         });
         alerta.show();
     }
+
+
+    private void deleteBanco(final String id
+    ){
+
+    ConfigInternet configInternet = new ConfigInternet();
+    StringRequest stringRequest = new StringRequest(
+
+            Request.Method.POST,
+            configInternet.metodoDelete(),
+            new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    Toast.makeText(MainActivity.this,"ID  "+id+"  DELETADO",Toast.LENGTH_SHORT).show();
+                }
+            },
+            new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+
+                }
+            }
+    ){
+        @Override
+        protected Map<String, String > getParams() throws AuthFailureError {
+            Map<String, String> params = new HashMap<>();
+            params.put("id",id);
+
+            return params;
+        }
+    };
+        requestQueue.add(stringRequest);
+}
 
 
     @Override

@@ -49,15 +49,15 @@ public class FormularioSubstitutivaActivity extends AppCompatActivity {
     private void carregarFormulario(){
         int idGestaoDeEnsino = getIntent().getIntExtra("idGestaoDeEnsino", 0);
         if( idGestaoDeEnsino != 0) {
-            gestaoDeEnsino = GestaoDeEnsinoDAO.getPetById(this, idGestaoDeEnsino);
+            gestaoDeEnsino = GestaoDeEnsinoDAO.getAlunoById(this, idGestaoDeEnsino);
             String aluno = String.format(getString(R.string.aluno_v1));
             String matricula = String.format(getString(R.string.matricula2_v1));
             String nota1_do_aluno = String.format(getString(R.string.nota1_do_aluno2_v1));
 
-            etNomeAluno.setText( aluno+gestaoDeEnsino.nomeAluno);
+            etNomeAluno.setText( aluno+":   "+gestaoDeEnsino.nomeAluno);
             etMatricula.setText( matricula+":   "+gestaoDeEnsino.getMatricula());
             etNota1.setText("");
-            etNota1.setText(   nota1_do_aluno+":    "+String.valueOf(gestaoDeEnsino.getNota1()));
+            etNota1.setText(   nota1_do_aluno+":  "+String.valueOf(gestaoDeEnsino.getNota1()));
             etNota2.setText(   String.valueOf(gestaoDeEnsino.nota2));
         }
     }

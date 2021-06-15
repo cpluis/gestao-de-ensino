@@ -103,7 +103,6 @@ public class GestaoDeEnsinoDAO {
                 gestaoDeEnsino.notaFinal = cursor.getDouble(9);
                 gestaoDeEnsino.status = cursor.getString(10);
                 gestaoDeEnsino.observacao = cursor.getString(11);
-//                gestaoDeEnsino.imagem = cursor.getBlob(6);  não é aqui
                 lista.add(gestaoDeEnsino);
             }while( cursor.moveToNext() );
         }
@@ -204,7 +203,6 @@ public class GestaoDeEnsinoDAO {
             cursor.moveToFirst();
             do{
                 GestaoDeEnsino gestaoDeEnsino = new GestaoDeEnsino();
-
                 gestaoDeEnsino.id = cursor.getInt( 0);
                 gestaoDeEnsino.nomeAluno = cursor.getString(1);
                 gestaoDeEnsino.matricula = cursor.getString(2);
@@ -223,7 +221,7 @@ public class GestaoDeEnsinoDAO {
         return lista;
     }
 
-    public static GestaoDeEnsino getPetById(Context context, int id) {
+    public static GestaoDeEnsino getAlunoById(Context context, int id) {
         Banco banco = new Banco(context);
         SQLiteDatabase db = banco.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status, observacao   FROM gestaoDeEnsino WHERE id = " + id, null);

@@ -8,6 +8,19 @@
     android:layout_margin="10dp"
     tools:context=".Activity.FormularioActivity">
 
+    <EditText
+        android:id="@+id/etNomeAluno"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/digite_o_nome_do_aluno_v1"
+        android:inputType="textCapWords"
+        android:maxLength="20"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etMatricula"
@@ -24,19 +37,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNomeAluno" />
 
-    <EditText
-        android:id="@+id/etNomeAluno"
-        android:layout_width="353dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="52dp"
-        android:ems="10"
-        android:hint="@string/digite_o_nome_do_aluno_v1"
-        android:inputType="textCapWords"
-        android:maxLength="20"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <EditText
         android:id="@+id/etNota1"

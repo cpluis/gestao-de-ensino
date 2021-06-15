@@ -43,7 +43,7 @@
     <string name="txtAprovados_v1">Aprovados</string>
     <string name="txtReprovado_v1">Reprovado</string>
     <string name="txtExcelente_v1">Excelente</string>
-    <string name="Aqui_v1">Exit!</string> 
+    <string name="Aqui_v1">Exit!</string>
     <string name="observacao"></string>
     <string name="campos_opcional_v1">Observações:</string>
     <string name="naoharecuperacao_v1">Não encontrado nenhum aluno em Recuperação</string>
@@ -59,6 +59,6 @@
     <string name="preencha_campos_v1">Preencha os campos!</string>
     <string name="senha_mesma_ambos_campos_v1">A senha deve ser a mesma em ambos campos!</string>
     <string name="aluno_v1">ALUNO</string>
-    <string name="matricula2_v1">matricula</string>
-    <string name="nota1_do_aluno2_v1">nota1_do_aluno2</string>
+    <string name="matricula2_v1">MATRÍCULA</string>
+    <string name="nota1_do_aluno2_v1">NOTA A SER SUBSTITUIDA</string>
 </resources>

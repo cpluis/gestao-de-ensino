@@ -13,9 +13,10 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:background="#EC0505"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/listavazia">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -28,7 +29,6 @@
         android:backgroundTint="#00f"
         app:srcCompat="@android:drawable/ic_input_add"
         app:tint="#fff"/>
-
 
 <include layout="@layout/content_main" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

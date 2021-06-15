@@ -3,116 +3,120 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#E4EBECE8"
     android:layout_height="match_parent"
+    android:background="#E4EBECE8"
     tools:context=".Activity.FormularioSubstitutivaActivity">
+
+    <EditText
+        android:id="@+id/etMatricula"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:background="#ADABB3"
+        android:enabled="false"
+        android:focusable="false"
+        android:format="integer"
+
+        android:hint="@string/digite_a_matricula_do_aluno_v1"
+        android:inputType="number"
+        android:maxLength="40"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeAluno"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etNomeAluno"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeAluno" />
 
     <Button
         android:id="@+id/btnSalvar"
         android:layout_width="146dp"
         android:layout_height="59dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
         android:background="#EC0505"
         android:text="@string/salvar_v1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
-        app:layout_constraintStart_toStartOf="parent"
 
+        app:layout_constraintEnd_toEndOf="@+id/etNota2"
+        app:layout_constraintStart_toStartOf="@+id/etNota2"
         app:layout_constraintTop_toBottomOf="@+id/etNota2" />
 
+    <EditText
+        android:id="@+id/etNomeAluno"
+        android:layout_width="353dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="72dp"
+        android:background="#ADABB3"
+        android:editable="false"
+
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="@string/digite_o_nome_do_aluno_v1"
+        android:inputType="textCapWords"
+        android:maxLength="50"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="@string/titulo_substitutiva_v1"
         android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </TextView>
 
     <EditText
-        android:id="@+id/etMatricula"
+        android:id="@+id/etNota1"
         android:layout_width="353dp"
         android:layout_height="59dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="#ADABB3"
+        android:ems="10"
         android:enabled="false"
-        android:focusable="false"
-        android:format="integer"
-        android:hint="@string/digite_a_matricula_do_aluno_v1"
         android:inputType="number"
         android:maxLength="40"
+        android:minLines="1"
+        android:text="Nota a ser sub"
         android:textAlignment="center"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.672"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNomeAluno" />
+        app:layout_constraintEnd_toEndOf="@+id/etMatricula"
+        app:layout_constraintStart_toStartOf="@+id/etMatricula"
+        app:layout_constraintTop_toBottomOf="@+id/etMatricula" />
 
     <EditText
         android:id="@+id/etNota2"
-        android:layout_width="353dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="225dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/digite_a_N2_do_aluno_v1"
         android:inputType="number"
         android:maxLength="2"
         android:minLines="1"
         android:textAlignment="center"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etNota1"
+        app:layout_constraintStart_toStartOf="@+id/etNota1"
         app:layout_constraintTop_toBottomOf="@+id/etNota1" />
-
-    <EditText
-        android:id="@+id/etNota1"
-        android:layout_width="353dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:background="#ADABB3"
-        android:enabled="false"
-        android:inputType="number"
-        android:maxLength="40"
-        android:minLines="1"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.672"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etMatricula" />
-
-    <EditText
-        android:id="@+id/etNomeAluno"
-        android:layout_width="353dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="136dp"
-        android:editable="false"
-        android:textSize="17dp"
-        android:textColor="@color/black"
-
-        android:ems="10"
-        android:enabled="false"
-        android:background="#ADABB3"
-        android:focusable="false"
-        android:hint="@string/digite_o_nome_do_aluno_v1"
-        android:inputType="textCapWords"
-        android:maxLength="50"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.672"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="95dp"
-        android:layout_height="144dp"
-        app:srcCompat="@drawable/image"
-        tools:layout_editor_absoluteX="9dp" />
+        android:layout_width="104dp"
+        android:layout_height="155dp"
+
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

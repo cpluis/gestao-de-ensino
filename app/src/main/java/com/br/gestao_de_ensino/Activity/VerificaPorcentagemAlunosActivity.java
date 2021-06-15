@@ -11,10 +11,21 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.br.gestao_de_ensino.Activity.util.ConfigInternet;
 import com.br.gestao_de_ensino.R;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import model.GestaoDeEnsinoDAO;
 
@@ -26,6 +37,7 @@ public class VerificaPorcentagemAlunosActivity extends AppCompatActivity {
     private List<GestaoDeEnsino> listaGestaoDeEnsinos;
     private  Boolean verificaSeTem;
 
+    RequestQueue requestQueue ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +46,7 @@ public class VerificaPorcentagemAlunosActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         lvAlunoRecuperacao = findViewById(R.id.lvAlunoRecuperacao);
         btnQtdRecuperacao = findViewById(R.id.btnQtdRecuperacao);
+        requestQueue = Volley.newRequestQueue(this);
 
         carregarAluno();
         configurarListView();
@@ -72,11 +85,50 @@ public class VerificaPorcentagemAlunosActivity extends AppCompatActivity {
         alerta.setPositiveButton(R.string.txtSim_v1, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
+                String id = String.valueOf(gestaoDeEnsino.id);
+                deleteBanco(id);
                 GestaoDeEnsinoDAO.excluir(gestaoDeEnsino.id, VerificaPorcentagemAlunosActivity.this);
-                carregarAluno();
+//                carregarAluno();
+                Intent intent = new Intent(VerificaPorcentagemAlunosActivity.this, MainActivity.class);
+                startActivity(intent);
             }
+
         });
         alerta.show();
+    }
+
+
+
+    private void deleteBanco(final String id
+    ){
+
+        ConfigInternet configInternet = new ConfigInternet();
+        StringRequest stringRequest = new StringRequest(
+
+                Request.Method.POST,
+                configInternet.metodoDelete(),
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Toast.makeText(VerificaPorcentagemAlunosActivity.this,"ID  "+id+"  DELETADO",Toast.LENGTH_SHORT).show();
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                    }
+                }
+        ){
+            @Override
+            protected Map<String, String > getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("id",id);
+
+                return params;
+            }
+        };
+        requestQueue.add(stringRequest);
     }
 
     @Override
