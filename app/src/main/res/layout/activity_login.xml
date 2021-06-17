@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context="loginFirebase.LoginActivity"
+            >
+
+
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#FF003796"
+        android:hint="@string/e_mail_v1"
+        android:inputType="textEmailAddress"
+        android:textColor="#FF003796"
+        android:textColorHint="#FF003796" />
+
+    //Campo - Senha
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF003796"
+        android:hint="@string/senha_v1"
+        android:inputType="textPassword"
+        android:textColorHint="#003796"
+         />
+
+    //Check Mostrar Senha
+
+    //Botão Login
+
+    <CheckBox
+        android:id="@+id/ckb_mostrar_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="70dp"
+        android:buttonTint="@color/black"
+        android:text="@string/mostrar_senha_v1"
+        android:textColor="@color/black" />
+
+            <Button
+        android:id="@+id/btn_login"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#EC0505"
+        android:text="@string/login_v1"
+        android:textColor="@color/white" />
+
+    //Cadastrar
+
+    <Button
+        android:id="@+id/btn_cadastrar"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#EC0505"
+        android:text="@string/cadastrar_v1"
+        android:textColor="@color/white" />
+
+    //Barra de carregamento
+
+    <ProgressBar
+        android:id="@+id/loginProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/black"
+        android:visibility="invisible" />
+
+</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </ScrollView>

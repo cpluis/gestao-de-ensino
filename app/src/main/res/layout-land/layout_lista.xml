@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:padding="1dp"
+    android:id="@+id/llFundoLista"
+    android:layout_width="match_parent"
+    android:layout_height="380dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginStart="9dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/etmlObservacao"
+            android:layout_width="224dp"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="469dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="27dp"
+            android:fontFamily="serif"
+            android:textColor="#051EAA"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="467dp"
+            android:layout_marginTop="26dp"
+            android:background="#F12233"
+            android:text="@string/observa_o_v1"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="142dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="570dp"
+            android:src="@drawable/image" />
+
+        <TextView
+            android:id="@+id/tvListaNomeAluno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-3dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
+            android:textAlignment="viewStart"
+            android:textColor="#051EAA"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="457dp"
+            android:text="@string/nota2_v1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="456dp"
+            android:gravity="top"
+            android:text="@string/nota1_v1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="118dp"
+            android:layout_marginEnd="456dp"
+            android:text="@string/status_v1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvListaNotaFinal"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="141dp"
+            android:layout_marginEnd="300dp"
+            android:fontFamily="serif"
+            android:textColor="#051EAA"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="146dp"
+            android:layout_marginEnd="456dp"
+            android:text="@string/nota_final_v1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvListaMatricula"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="301dp"
+            android:text="Matrícula"
+            android:textAlignment="viewStart"
+            android:textColor="#051EAA"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvListaNota1"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="303dp"
+            android:text="nota n1"
+            android:textAlignment="viewStart"
+            android:textColor="#051EAA"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvListaStatus"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="117dp"
+            android:layout_marginEnd="302dp"
+            android:textColor="#051EAA"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="461dp"
+            android:text="@string/matricula_v1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="175dp"
+
+            android:layout_marginEnd="316dp"
+            android:text="@string/substitutiva_v1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvListaSunstitutiva"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="345dp"
+            android:layout_marginTop="177dp"
+            android:layout_marginEnd="293dp"
+            android:layout_marginBottom="26dp"
+            android:textAlignment="viewStart"
+            android:textColor="#051EAA"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvListaNota2"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="89dp"
+            android:layout_marginEnd="303dp"
+            android:text="nota n2"
+            android:textColor="#051EAA"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="169dp"
+            android:layout_marginEnd="536dp"
+            android:layout_marginBottom="41dp"
+            android:background="#F12233"
+            android:text="FADERGS"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+

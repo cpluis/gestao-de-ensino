@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppGestaoDeEnsino</string>
+    <string name="aluno_v1">STUDENT</string>
+    <string name="matricula2_v1">REGISTRATION</string>
+    <string name="nota1_do_aluno2_v1">STUDENT GRADE N1</string>
+    <string name="titulo_substitutiva_v1">substitute</string>
+</resources>
