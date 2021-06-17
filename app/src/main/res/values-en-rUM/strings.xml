@@ -1,8 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AppGestaoDeEnsino</string>
-    <string name="aluno_v1">STUDENT</string>
-    <string name="matricula2_v1">REGISTRATION</string>
-    <string name="nota1_do_aluno2_v1">STUDENT GRADE N1</string>
-    <string name="titulo_substitutiva_v1">substitute</string>
+
+    //<string name="first_fragment_label" translatable="false">First Fragment</string>
+    //<string name="second_fragment_label" translatable="false">Second Fragment</string>
+    //<string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    //<string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    //<string name="action_sair">Exit</string>
+    //<string name="anterior">Previous</string>
+    //<string name="labelUsuario">User</string>
+    //<string name="labelSenha">Password</string>
+    //<string name="botaoLogar">Login</string>
+    //<string name="botaoSalvar">Save</string>
+    //<string name="hintLogin">Enter your user</string>
+    //<string name="hintSenha">Enter your password</string>
+    //<string name="btnVerificaRecuperacao">Check Substitute</string>
+    //<string name="login">Start Session</string>
+    // <string name="login_ou_senha_com_erro">Login or password invalid</string>
+    //<string name="tente_novamente">Try Again</string>
+    //<string name="txtDesejaSair">Do you really want to leave?</string>
+    //<string name="txtConfirmaRealizarSunstitutiva">Do you confirm the need to take the substitute test?</string>
+    //<string name="nomeAluno">Student</string>
+    //<string name="observacao"> Note </string>
+
+    <string name="app_name">Teaching Management</string>
+    <string name="txtAtencao_v1">Attention!</string>
+    *<string name="txtPreeTdsCampos_v1">Fill in all fields!</string>
+    *<string name="preencha_campos_v1">Fill in the fields!</string>
+    <string name="txtPreeCamposSubstitutiva_v1">Fill in the replacement field!</string>
+    <string name="txtEntendiClicAqui_v1">Got it Click Here!</string>
+    <string name="salvar_v1">Save</string>
+    <string name="digite_o_nome_do_aluno_v1">Enter student name</string>
+    <string name="txtConfirmaExclusao_v1">Do you confirm the deletion of the Student record?</string>
+    <string name="txtSim_v1">Yes</string>
+    <string name="txtCancela_v1">Cancel</string>
+    <string name="status_v1">Status</string>
+    <string name="nota_final_v1">Final Grade</string>
+    <string name="nota1_v1">Grade 1</string>
+    <string name="nota2_v1">Grade 2</string>
+    *<string name="matricula_v1">Registration</string>
+    *<string name="matricula2_v1">Registration</string>
+    <string name="digite_a_matricula_do_aluno_v1"> Registration </string>
+    <string name="digite_a_N1_do_aluno_v1">Enter student grade 1:</string>
+    <string name="digite_a_N2_do_aluno_v1">Enter student grade 2:</string>
+    <string name="substitutiva_v1">Performed Substitute</string>
+    <string name="titulo_substitutiva_v1"> Substitute </string>
+    <string name="txtRecuperacao_v1">Recuperation </string>
+    <string name="indicadores_v1">Indicating </string>
+    <string name="txtAprovados_v1">Approved</string>
+    <string name="txtReprovado_v1">Disapprove</string>
+    <string name="txtExcelente_v1">Excellent</string>
+    <string name="Aqui_v1">Exit</string>
+    <string name="campos_opcional_v1"> Note:</string>
+    <string name="naoharecuperacao_v1">Not found any students in Recovery</string>
+    <string name="e_mail_v1">E-mail</string>
+    <string name="senha_v1">Password</string>
+    <string name="mostrar_senha_v1">Show password</string>
+    <string name="login_v1">Login</string>
+    <string name="confirmar_senha_v1">Confirm password</string>
+    <string name="cadastrar_v1">Register</string>
+    <string name="verifica_recupera_o_v1">Check Recovery</string>
+    <string name="observa_o_v1">Note:</string>
+    <string name="formato_invalido_v1">Invalid email format!</string>
+    <string name="senha_mesma_ambos_campos_v1">Passwords do not match!</string>
+    <string name="aluno_v1">Student</string>
+    <string name="nota1_do_aluno2_v1">grade1_do_student2</string>
 </resources>

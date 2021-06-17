@@ -1,50 +1,54 @@
 <resources>
+
+    //<string name="first_fragment_label" translatable="false">First Fragment</string>
+    //<string name="second_fragment_label" translatable="false">Second Fragment</string>
+    //<string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    //<string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    //<string name="action_sair">Sair</string>
+    //<string name="anterior">Anterior</string>
+    //<string name="labelUsuario">Usuário</string>
+    //<string name="labelSenha">Senha</string>
+    //<string name="botaoLogar">Login</string>
+    //<string name="botaoSalvar">Salvar</string>
+    //<string name="hintLogin">Digite seu usuário</string>
+    //<string name="hintSenha">Digite sua senha</string>
+    //<string name="btnVerificaRecuperacao">Verificar Recuperação!</string>
+    //<string name="login">Iniciar Sessão</string>
+    // <string name="login_ou_senha_com_erro">Login ou senha com erro</string>
+    //<string name="tente_novamente">Tente novamente</string>
+    //<string name="txtDesejaSair">Deseja realmente sair?</string>
+    //<string name="txtConfirmaRealizarSunstitutiva">Confirma a necessidade de fazer a prova substitutiva?</string>
+    //<string name="nomeAluno">Aluno</string>
+    //<string name="observacao">Observação</string>
+
     <string name="app_name">AppGestaoDeEnsino</string>
-    <string name="first_fragment_label" translatable="false">First Fragment</string>
-    <string name="second_fragment_label" translatable="false">Second Fragment</string>
-    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
-    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
-    <string name="action_sair">Sair</string>
-    <string name="anterior">Anterior</string>
-    <string name="labelUsuario">Usuário</string>
-    <string name="labelSenha">Senha</string>
-    <string name="botaoLogar">Login</string>
-    <string name="botaoSalvar">Save</string>
-    <string name="hintLogin">Digite seu usuário</string>
-    <string name="hintSenha">Digite sua senha</string>
     <string name="txtAtencao_v1">Atenção!</string>
-    <string name="btnVerificaRecuperacao">Verificar Recuperação!</string>
-    <string name="txtPreeTdsCampos_v1">Preencha todos os campos!</string>
+    *<string name="txtPreeTdsCampos_v1">Preencha todos os campos!</string>
+    *<string name="preencha_campos_v1">Preencha os campos!</string>
     <string name="txtPreeCamposSubstitutiva_v1">Preencha o campo de substituição!</string>
     <string name="txtEntendiClicAqui_v1">Entendi Clique Aqui!</string>
-    <string name="login">Iniciar Sessão</string>
     <string name="salvar_v1">Salvar</string>
     <string name="digite_o_nome_do_aluno_v1">Digite o nome do aluno</string>
-    <string name="login_ou_senha_com_erro">Login ou senha com erro</string>
-    <string name="tente_novamente">Tente novamente</string>
-    <string name="txtDesejaSair">Deseja realmente sair?</string>
     <string name="txtConfirmaExclusao_v1">Confirma a exclusão do registro do Aluno?</string>
-    <string name="txtConfirmaRealizarSunstitutiva">Confirma a necessidade de fazer a prova substitutiva?</string>
     <string name="txtSim_v1">Sim</string>
     <string name="txtCancela_v1">Cancelar</string>
     <string name="status_v1">Status</string>
     <string name="nota_final_v1">Nota final</string>
     <string name="nota1_v1">Nota 1</string>
     <string name="nota2_v1">Nota 2</string>
-    <string name="nomeAluno">Aluno</string>
-    <string name="matricula_v1">Matrícula</string>
+    *<string name="matricula_v1">Matrícula</string>
+    *<string name="matricula2_v1">Matrícula</string>
     <string name="digite_a_matricula_do_aluno_v1">Matrícula</string>
-    <string name="digite_a_N1_do_aluno_v1">Digite a nota 1 do aluno</string>
-    <string name="digite_a_N2_do_aluno_v1">Digite a nota 2 do aluno</string>
+    <string name="digite_a_N1_do_aluno_v1">Digite a nota 1 do aluno:</string>
+    <string name="digite_a_N2_do_aluno_v1">Digite a nota 2 do aluno:</string>
     <string name="substitutiva_v1">Realizou Substitutiva</string>
-    <string name="titulo_substitutiva_v1">SUBSTITUTIVA</string>
-    <string name="txtRecuperacao_v1">Recuperacao</string>
-    <string name="indicadores_v1">indicadores</string>
+    <string name="titulo_substitutiva_v1">Substitutiva</string>
+    <string name="txtRecuperacao_v1">Recuperação</string>
+    <string name="indicadores_v1">Indicadores</string>
     <string name="txtAprovados_v1">Aprovados</string>
     <string name="txtReprovado_v1">Reprovado</string>
     <string name="txtExcelente_v1">Excelente</string>
-    <string name="Aqui_v1">Sair!</string>
-    <string name="observacao"></string>
+    <string name="Aqui_v1">Sair</string>
     <string name="campos_opcional_v1">Observações:</string>
     <string name="naoharecuperacao_v1">Não encontrado nenhum aluno em Recuperação</string>
     <string name="e_mail_v1">E-mail</string>
@@ -53,12 +57,10 @@
     <string name="login_v1">Login</string>
     <string name="confirmar_senha_v1">Confirmar Senha</string>
     <string name="cadastrar_v1">Cadastrar</string>
-    <string name="verifica_recupera_o_v1">Verifica Recuperação</string>
+    <string name="verifica_recupera_o_v1">Verificar Recuperação</string>
     <string name="observa_o_v1">Observação:</string>
-    <string name="formato_invalido_v1">Formato de email invalido!</string>
-    <string name="preencha_campos_v1">Preencha os campos!</string>
-    <string name="senha_mesma_ambos_campos_v1">A senha deve ser a mesma em ambos campos!</string>
-    <string name="aluno_v1">ALUNO</string>
-    <string name="matricula2_v1">MATRÍCULA</string>
-    <string name="nota1_do_aluno2_v1">NOTA A SER SUBSTITUIDA</string>
+    <string name="formato_invalido_v1">Formato de e-mail inválido!</string>
+    <string name="senha_mesma_ambos_campos_v1">Senhas não conferem!</string>
+    <string name="aluno_v1">Aluno</string>
+    <string name="nota1_do_aluno2_v1">nota1_do_aluno2</string>
 </resources>

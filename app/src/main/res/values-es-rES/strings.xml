@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AppGestaoDeEnsino</string>
-    <string name="formato_invalido_v1">Formato de correo inválido!</string>
-    <string name="txtPreeCamposSubstitutiva_v1">Fill in the replacement field!</string>
+    //<string name="first_fragment_label" translatable="false">First Fragment</string>
+    //<string name="second_fragment_label" translatable="false">Second Fragment</string>
+    //<string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    //<string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    //<string name="action_sair">Salir</string>
+    //<string name="anterior">Anterior</string>
+    //<string name="labelUsuario">Usuario</string>
+    //<string name="labelSenha">Contraseña</string>
+    //<string name="botaoLogar">Acceso</string>
+    //<string name="botaoSalvar">Salvar</string>
+    //<string name="hintLogin">Ingrese su nombre de usuario</string>
+    //<string name="hintSenha">Escribe tu contraseña</string>
+    //<string name="btnVerificaRecuperacao">¡Compruebe la recuperación!</string>
+    //<string name="login">Iniciar sesión</string>
+    // <string name="login_ou_senha_com_erro">Inicio de sesión o contraseña con error</string>
+    //<string name="tente_novamente">Inténtalo de nuevo</string>
+    //<string name="txtDesejaSair">¿De verdad quieres irte?</string>
+    //<string name="txtConfirmaRealizarSunstitutiva">¿Confirmas la necesidad de realizar el examen sustituto?</string>
+    //<string name="nomeAluno">Alumno</string>
+    //<string name="observacao"> Comentarios </string>
+
+    <string name="app_name">AppGestión Docente</string>
+    <string name="txtAtencao_v1">¡Atención!</string>
+    <string name="txtPreeTdsCampos_v1">¡Complete todos los campos!</string>
+    <string name="preencha_campos_v1">¡Complete los campos!</string>
+    <string name="txtPreeCamposSubstitutiva_v1">¡Complete el campo de reemplazo!</string>
+    <string name="txtEntendiClicAqui_v1">¡Entendido, haga clic aquí!</string>
+    <string name="salvar_v1">Ahorrar</string>
+    <string name="digite_o_nome_do_aluno_v1">Ingrese el nombre del estudiante</string>
+    <string name="txtConfirmaExclusao_v1">¿Confirma la eliminación del registro de estudiante?</string>
+    <string name="txtSim_v1">Sí</string>
+    <string name="txtCancela_v1">Cancelar</string>
+    <string name="status_v1">Estado</string>
+    <string name="nota_final_v1">Nota final</string>
+    <string name="nota1_v1">Nota 1</string>
+    <string name="nota2_v1">Nota 2</string>
+    <string name="matricula_v1">Registro</string>
+    <string name="matricula2_v1">Registro</string>
+    <string name="digite_a_matricula_do_aluno_v1">Matrícula</string>
+    <string name="digite_a_N1_do_aluno_v1">Ingrese el grado de estudiante 1:</string>
+    <string name="digite_a_N2_do_aluno_v1">Ingrese el grado de estudiante 2:</string>
+    <string name="substitutiva_v1">Sustituto realizado</string>
+    <string name="titulo_substitutiva_v1">Sustituir</string>
+    <string name="txtRecuperacao_v1">Recuperación</string>
+    <string name="indicadores_v1">Indicadores</string>
+    <string name="txtAprovados_v1">Aprobado</string>
+    <string name="txtReprovado_v1">Desaprobado</string>
+    <string name="txtExcelente_v1">Estupendo</string>
+    <string name="Aqui_v1">Salir</string>
+    <string name="campos_opcional_v1">Comentarios:</string>
+    <string name="naoharecuperacao_v1">No se encontraron estudiantes en Recuperación</string>
+    <string name="e_mail_v1">Email</string>
+    <string name="senha_v1">Contraseña</string>
+    <string name="mostrar_senha_v1">Mostrar contraseña</string>
+    <string name="login_v1">Acceso</string>
+    <string name="confirmar_senha_v1">Confirmar seña</string>
+    <string name="cadastrar_v1">Registrar</string>
+    <string name="verifica_recupera_o_v1">Comprobar recuperación</string>
+    <string name="observa_o_v1">Comentario:</string>
+    <string name="formato_invalido_v1">¡Formato de correo inválido!</string>
+    <string name="senha_mesma_ambos_campos_v1">Las contraseñas no coinciden!</string>
+    <string name="aluno_v1">Alumno</string>
+    <string name="nota1_do_aluno2_v1">Grado1 </string>
 </resources>
