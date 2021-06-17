@@ -150,7 +150,7 @@ public class FormularioActivity extends AppCompatActivity {
                 Intent intent = new Intent(FormularioActivity.this, MainActivity.class);
                 startActivity( intent );
             }
-
+            
             gestaoDeEnsino.nomeAluno = etNomeAluno.getText().toString();
             gestaoDeEnsino.matricula = etMatricula.getText().toString();
             gestaoDeEnsino.observacao = etmlObservacao.getText().toString();;
