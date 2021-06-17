@@ -63,4 +63,6 @@
     <string name="senha_mesma_ambos_campos_v1">Senhas não conferem!</string>
     <string name="aluno_v1">Aluno</string>
     <string name="nota1_do_aluno2_v1">nota1_do_aluno2</string>
+    <string name="alunos_em_recupera_o">Alunos em recuperação</string>
+
 </resources>

@@ -197,6 +197,22 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/tvListaData"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etmlObservacao"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="137dp"
+            android:text="Data"
+            android:textAlignment="viewStart"
+            android:textColor="#051EAA"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
             android:layout_width="225dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"

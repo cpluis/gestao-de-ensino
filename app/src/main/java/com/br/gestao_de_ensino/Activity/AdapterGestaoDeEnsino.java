@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import com.br.gestao_de_ensino.R;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 public class AdapterGestaoDeEnsino  extends BaseAdapter {
 
@@ -56,6 +58,7 @@ public class AdapterGestaoDeEnsino  extends BaseAdapter {
             item.tvNotaFinal = convertView.findViewById(R.id.tvListaNotaFinal);
             item.tvSunstitutiva = convertView.findViewById(R.id.tvListaSunstitutiva);
             item.tvObservacao = convertView.findViewById(R.id.etmlObservacao);
+            item.tvData = convertView.findViewById(R.id.tvListaData);
             item.layout = convertView.findViewById(R.id.llFundoLista);
             convertView.setTag( item );
         }else {
@@ -63,13 +66,15 @@ public class AdapterGestaoDeEnsino  extends BaseAdapter {
         }
 
         GestaoDeEnsino gestaoDeEnsino = gestaoDeEnsinoList.get(i);
-        item.tvNomeAluno.setText(  gestaoDeEnsino.nomeAluno);
+
+        item.tvNomeAluno.setText(  gestaoDeEnsino.nomeAluno.toUpperCase());
         item.tvMatricula.setText(    gestaoDeEnsino.matricula);
         item.tvSunstitutiva.setText(    gestaoDeEnsino.substitutiva);
         item.tvNota1.setText(   String.valueOf(gestaoDeEnsino.nota1));
         item.tvNota2.setText(  String.valueOf( gestaoDeEnsino.nota2 ));
         item.tvStatus.setText(  gestaoDeEnsino.status);
         item.tvObservacao.setText(  gestaoDeEnsino.observacao);
+        item.tvData.setText("ljlj");
         item.tvNotaFinal.setText(  String.valueOf( gestaoDeEnsino.notaFinal));
 
         if( i % 2 == 0 ){
@@ -81,7 +86,7 @@ public class AdapterGestaoDeEnsino  extends BaseAdapter {
     }
 
     private class ItemSuporte{
-        TextView tvNomeAluno, tvMatricula, tvNota1, tvNota2,  tvStatus,tvNotaFinal, tvObservacao, tvSunstitutiva;
+        TextView tvNomeAluno, tvMatricula, tvNota1, tvNota2,  tvStatus,tvNotaFinal, tvObservacao, tvData, tvSunstitutiva;
         RelativeLayout layout;
     }
 }

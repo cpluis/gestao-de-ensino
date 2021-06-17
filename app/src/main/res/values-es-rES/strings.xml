@@ -4,22 +4,22 @@
     //<string name="second_fragment_label" translatable="false">Second Fragment</string>
     //<string name="hello_first_fragment" translatable="false">Hello first fragment</string>
     //<string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
-    //<string name="action_sair">Salir</string>
-    //<string name="anterior">Anterior</string>
-    //<string name="labelUsuario">Usuario</string>
-    //<string name="labelSenha">Contraseña</string>
-    //<string name="botaoLogar">Acceso</string>
-    //<string name="botaoSalvar">Salvar</string>
-    //<string name="hintLogin">Ingrese su nombre de usuario</string>
-    //<string name="hintSenha">Escribe tu contraseña</string>
-    //<string name="btnVerificaRecuperacao">¡Compruebe la recuperación!</string>
-    //<string name="login">Iniciar sesión</string>
-    // <string name="login_ou_senha_com_erro">Inicio de sesión o contraseña con error</string>
-    //<string name="tente_novamente">Inténtalo de nuevo</string>
-    //<string name="txtDesejaSair">¿De verdad quieres irte?</string>
-    //<string name="txtConfirmaRealizarSunstitutiva">¿Confirmas la necesidad de realizar el examen sustituto?</string>
-    //<string name="nomeAluno">Alumno</string>
-    //<string name="observacao"> Comentarios </string>
+    <string name="action_sair">Salir</string>
+    <string name="anterior">Anterior</string>
+    <string name="labelUsuario">Usuario</string>
+    <string name="labelSenha">Contraseña</string>
+    <string name="botaoLogar">Acceso</string>
+    <string name="botaoSalvar">Salvar</string>
+    <string name="hintLogin">Ingrese su nombre de usuario</string>
+    <string name="hintSenha">Escribe tu contraseña</string>
+    <string name="btnVerificaRecuperacao">¡Compruebe la recuperación!</string>
+    <string name="login">Iniciar sesión</string>
+     <string name="login_ou_senha_com_erro">Inicio de sesión o contraseña con error</string>
+    <string name="tente_novamente">Inténtalo de nuevo</string>
+    <string name="txtDesejaSair">¿De verdad quieres irte?</string>
+    <string name="txtConfirmaRealizarSunstitutiva">¿Confirmas la necesidad de realizar el examen sustituto?</string>
+    <string name="nomeAluno">Alumno</string>
+    <string name="observacao"></string>
 
     <string name="app_name">AppGestión Docente</string>
     <string name="txtAtencao_v1">¡Atención!</string>
@@ -32,10 +32,10 @@
     <string name="txtConfirmaExclusao_v1">¿Confirma la eliminación del registro de estudiante?</string>
     <string name="txtSim_v1">Sí</string>
     <string name="txtCancela_v1">Cancelar</string>
-    <string name="status_v1">Estado</string>
+    <string name="status_v1">Expresar</string>
     <string name="nota_final_v1">Nota final</string>
-    <string name="nota1_v1">Nota 1</string>
-    <string name="nota2_v1">Nota 2</string>
+    <string name="nota1_v1">Grado 1</string>
+    <string name="nota2_v1">Grado 2</string>
     <string name="matricula_v1">Registro</string>
     <string name="matricula2_v1">Registro</string>
     <string name="digite_a_matricula_do_aluno_v1">Matrícula</string>
@@ -63,4 +63,6 @@
     <string name="senha_mesma_ambos_campos_v1">Las contraseñas no coinciden!</string>
     <string name="aluno_v1">Alumno</string>
     <string name="nota1_do_aluno2_v1">Grado1 </string>
+    <string name="alunos_em_recupera_o">Estudiantes en recuperación</string>
+
 </resources>

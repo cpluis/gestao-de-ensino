@@ -5,7 +5,7 @@
     //<string name="second_fragment_label" translatable="false">Second Fragment</string>
     //<string name="hello_first_fragment" translatable="false">Hello first fragment</string>
     //<string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
-    //<string name="action_sair">Exit</string>
+    <string name="action_sair">Exit</string>
     //<string name="anterior">Previous</string>
     //<string name="labelUsuario">User</string>
     //<string name="labelSenha">Password</string>
@@ -64,4 +64,8 @@
     <string name="senha_mesma_ambos_campos_v1">Passwords do not match!</string>
     <string name="aluno_v1">Student</string>
     <string name="nota1_do_aluno2_v1">grade1_do_student2</string>
+    <string name="alunos_em_recupera_o">Students in recovery</string>
+    <string name="Não_precisou">Não precisou</string>
+    <string name="precisou">precisa</string>
+    <string name="precisa">precisa</string>
 </resources>

@@ -77,16 +77,15 @@ public class FormularioSubstitutivaActivity extends AppCompatActivity {
             double valor = (gestaoDeEnsino.nota1 * 0.4) + (gestaoDeEnsino.nota2 * 0.6);
             gestaoDeEnsino.notaFinal = Math.floor(valor);
 
-
             if(gestaoDeEnsino.notaFinal < 6 && gestaoDeEnsino.substitutiva.equals("precisa") ){
                 gestaoDeEnsino.setStatus("Reprovado");
                 gestaoDeEnsino.setSubstitutiva("precisou");
             }
-            if(gestaoDeEnsino.notaFinal > 6 && gestaoDeEnsino.notaFinal <8 && gestaoDeEnsino.substitutiva.equals("precisa") ){
+            if(gestaoDeEnsino.notaFinal >= 6 && gestaoDeEnsino.notaFinal <8 && gestaoDeEnsino.substitutiva.equals("precisa") ){
                 gestaoDeEnsino.setStatus("Aprovado");
                 gestaoDeEnsino.setSubstitutiva("precisou");
             }
-            if(gestaoDeEnsino.notaFinal > 8 && gestaoDeEnsino.substitutiva.equals("precisa") ){
+            if(gestaoDeEnsino.notaFinal >= 8 && gestaoDeEnsino.substitutiva.equals("precisa") ){
                 gestaoDeEnsino.setStatus("Exvelente");
                 gestaoDeEnsino.setSubstitutiva("precisou");
             }

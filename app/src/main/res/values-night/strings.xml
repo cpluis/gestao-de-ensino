@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alunos_em_recupera_o">Alunos em recuperação</string>
+    <string name="Não_precisou">Não precisou</string>
+    <string name="precisou">precisa</string>
+    <string name="precisa">precisa</string>
+</resources>
