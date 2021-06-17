@@ -18,6 +18,17 @@
         layout="@layout/content_recuperacao"
         android:layout_height="501dp" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1500px"
+        android:background="#3B45FF"
+        android:text="Alunos em recuperação"
+        android:textAlignment="center"
+        android:textColor="#F7F6FA"
+        android:textSize="50px"
+        android:textStyle="bold" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

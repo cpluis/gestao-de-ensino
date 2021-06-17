@@ -141,7 +141,7 @@ public class FormularioActivity extends AppCompatActivity {
                 String nota2 = etNota2.getText().toString();
                 String notaFinal = String.valueOf(notaFinal_2);
 
-                postBanco(nome, matricula, observacao, nota1, nota2, notaFinal);
+                postBanco(nome, matricula,  nota1, nota2, notaFinal, observacao);
 
                 gestaoDeEnsino = new GestaoDeEnsino();
                 AlertDialog.Builder alerta = new AlertDialog.Builder(this);
@@ -150,7 +150,7 @@ public class FormularioActivity extends AppCompatActivity {
                 Intent intent = new Intent(FormularioActivity.this, MainActivity.class);
                 startActivity( intent );
             }
-            
+
             gestaoDeEnsino.nomeAluno = etNomeAluno.getText().toString();
             gestaoDeEnsino.matricula = etMatricula.getText().toString();
             gestaoDeEnsino.observacao = etmlObservacao.getText().toString();;
