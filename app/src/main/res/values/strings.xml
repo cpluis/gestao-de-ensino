@@ -43,7 +43,7 @@
     <string name="txtAprovados_v1">Aprovados</string>
     <string name="txtReprovado_v1">Reprovado</string>
     <string name="txtExcelente_v1">Excelente</string>
-    <string name="Aqui_v1">Exit!</string>
+    <string name="Aqui_v1">Sair!</string>
     <string name="observacao"></string>
     <string name="campos_opcional_v1">Observações:</string>
     <string name="naoharecuperacao_v1">Não encontrado nenhum aluno em Recuperação</string>

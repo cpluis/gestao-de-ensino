@@ -71,8 +71,8 @@ public class FormularioActivity extends AppCompatActivity {
                            final String observacao
 
                             ){
-
-
+        GestaoDeEnsino gestaoDeEnsino = new GestaoDeEnsino();
+        final String substitutiva = gestaoDeEnsino.getSubstitutiva();
         ConfigInternet configInternet = new ConfigInternet();
         StringRequest stringRequest = new StringRequest(
 
@@ -100,6 +100,7 @@ public class FormularioActivity extends AppCompatActivity {
                 params.put("nota2",nota2);
                 params.put("nota_final",nota_final);
                 params.put("observacao",observacao);
+                params.put("substitutiva",substitutiva);
 
                 return params;
             }
