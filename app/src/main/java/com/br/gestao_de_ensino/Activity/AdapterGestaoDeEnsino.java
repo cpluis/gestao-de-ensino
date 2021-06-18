@@ -66,7 +66,7 @@ public class AdapterGestaoDeEnsino  extends BaseAdapter {
         }
 
         GestaoDeEnsino gestaoDeEnsino = gestaoDeEnsinoList.get(i);
-
+   
         item.tvNomeAluno.setText(  gestaoDeEnsino.nomeAluno.toUpperCase());
         item.tvMatricula.setText(    gestaoDeEnsino.matricula);
         item.tvSunstitutiva.setText(    gestaoDeEnsino.substitutiva);
