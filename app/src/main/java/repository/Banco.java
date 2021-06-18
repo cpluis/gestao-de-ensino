@@ -28,7 +28,8 @@ public class Banco extends SQLiteOpenHelper {
                 "     recuperacao INTEGER NOT NULL ," +
                 "     notaFinal DECIMAL(4,2)," +
                 "     status TEXT NOT NULL," +
-                "     observacao TEXT NOT NULL" +
+                "     observacao TEXT NOT NULL," +
+                "     data TEXT NOT NULL" +
                 ") " );
     }
 

@@ -74,7 +74,7 @@ public class AdapterGestaoDeEnsino  extends BaseAdapter {
         item.tvNota2.setText(  String.valueOf( gestaoDeEnsino.nota2 ));
         item.tvStatus.setText(  gestaoDeEnsino.status);
         item.tvObservacao.setText(  gestaoDeEnsino.observacao);
-        item.tvData.setText("ljlj");
+        item.tvData.setText(gestaoDeEnsino.data);
         item.tvNotaFinal.setText(  String.valueOf( gestaoDeEnsino.notaFinal));
 
         if( i % 2 == 0 ){

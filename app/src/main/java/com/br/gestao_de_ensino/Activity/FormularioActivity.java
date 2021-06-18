@@ -21,6 +21,8 @@ import com.android.volley.toolbox.Volley;
 import com.br.gestao_de_ensino.Activity.util.ConfigInternet;
 import com.br.gestao_de_ensino.R;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -152,11 +154,14 @@ public class FormularioActivity extends AppCompatActivity {
                 startActivity( intent );
             }
 
+
+
             gestaoDeEnsino.nomeAluno = etNomeAluno.getText().toString();
             gestaoDeEnsino.matricula = etMatricula.getText().toString();
             gestaoDeEnsino.observacao = etmlObservacao.getText().toString();;
             gestaoDeEnsino.nota1 = Integer.valueOf(etNota1.getText().toString());
             gestaoDeEnsino.nota2 = Integer.valueOf(etNota2.getText().toString());
+            gestaoDeEnsino.data = retornaData();
             double valor = (gestaoDeEnsino.nota1 * 0.4) + (gestaoDeEnsino.nota2 * 0.6);
             gestaoDeEnsino.notaFinal = (double) Math.round(valor);
 
@@ -186,5 +191,13 @@ public class FormularioActivity extends AppCompatActivity {
                 etmlObservacao.setText("");
             }
         }
+    }
+
+    public String retornaData(){
+        Date hoje = new Date();
+        SimpleDateFormat df;
+        df = new SimpleDateFormat("dd/MM/yyyy");
+        String data = new String(df.format(hoje));
+        return data;
     }
 }

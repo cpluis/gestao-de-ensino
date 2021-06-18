@@ -28,6 +28,7 @@ public class GestaoDeEnsinoDAO {
         valores.put("observacao", gestaoDeEnsino.observacao);
         valores.put("recuperacao", gestaoDeEnsino.recuperacao);
         valores.put("notaFinal", gestaoDeEnsino.notaFinal);
+        valores.put("data", gestaoDeEnsino.data);
 
         Banco banco = new Banco(context);
         SQLiteDatabase db = banco.getWritableDatabase();
@@ -48,6 +49,7 @@ public class GestaoDeEnsinoDAO {
         valores.put("reprovado", gestaoDeEnsino.reprovado);
         valores.put("recuperacao", gestaoDeEnsino.recuperacao);
         valores.put("notaFinal", gestaoDeEnsino.notaFinal);
+        valores.put("data", gestaoDeEnsino.data);
 
         Banco banco = new Banco(context);
         SQLiteDatabase db = banco.getWritableDatabase();
@@ -69,6 +71,7 @@ public class GestaoDeEnsinoDAO {
         valores.put("observacao", gestaoDeEnsino.observacao);
         valores.put("recuperacao", gestaoDeEnsino.recuperacao);
         valores.put("notaFinal", gestaoDeEnsino.notaFinal);
+        valores.put("data", gestaoDeEnsino.data);
 
         Banco banco = new Banco(context);
         SQLiteDatabase db = banco.getWritableDatabase();
@@ -86,7 +89,7 @@ public class GestaoDeEnsinoDAO {
         List<GestaoDeEnsino> lista = new ArrayList<>();
         Banco banco = new Banco(context);
         SQLiteDatabase db = banco.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status,observacao FROM gestaoDeEnsino ORDER BY nomeAluno", null );
+        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status,observacao, data FROM gestaoDeEnsino ORDER BY nomeAluno", null );
         if( cursor.getCount() > 0 ){
             cursor.moveToFirst();
             do{
@@ -103,6 +106,7 @@ public class GestaoDeEnsinoDAO {
                 gestaoDeEnsino.notaFinal = cursor.getDouble(9);
                 gestaoDeEnsino.status = cursor.getString(10);
                 gestaoDeEnsino.observacao = cursor.getString(11);
+                gestaoDeEnsino.data = cursor.getString(12);
                 lista.add(gestaoDeEnsino);
             }while( cursor.moveToNext() );
         }
@@ -114,7 +118,7 @@ public class GestaoDeEnsinoDAO {
         List<GestaoDeEnsino> lista = new ArrayList<>();
         Banco banco = new Banco(context);
         SQLiteDatabase db = banco.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status, observacao FROM gestaoDeEnsino WHERE status = 'Recuperacão'" , null );
+        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status, observacao, data FROM gestaoDeEnsino WHERE status = 'Recuperacão'" , null );
         if( cursor.getCount() > 0 ){
             cursor.moveToFirst();
             do{
@@ -132,6 +136,7 @@ public class GestaoDeEnsinoDAO {
                 gestaoDeEnsino.notaFinal = cursor.getDouble(9);
                 gestaoDeEnsino.status = cursor.getString(10);
                 gestaoDeEnsino.observacao = cursor.getString(11);
+                gestaoDeEnsino.data = cursor.getString(12);
                 lista.add(gestaoDeEnsino);
             }while( cursor.moveToNext() );
         }
@@ -142,7 +147,7 @@ public class GestaoDeEnsinoDAO {
         List<GestaoDeEnsino> lista = new ArrayList<>();
         Banco banco = new Banco(context);
         SQLiteDatabase db = banco.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status, observacao FROM gestaoDeEnsino WHERE status = 'Excelente'" , null );
+        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status, observacao, data FROM gestaoDeEnsino WHERE status = 'Excelente'" , null );
         if( cursor.getCount() > 0 ){
             cursor.moveToFirst();
             do{
@@ -160,6 +165,7 @@ public class GestaoDeEnsinoDAO {
                 gestaoDeEnsino.notaFinal = cursor.getDouble(9);
                 gestaoDeEnsino.status = cursor.getString(10);
                 gestaoDeEnsino.observacao = cursor.getString(11);
+                gestaoDeEnsino.data = cursor.getString(12);
                 lista.add(gestaoDeEnsino);
             }while( cursor.moveToNext() );
         }
@@ -170,7 +176,7 @@ public class GestaoDeEnsinoDAO {
         List<GestaoDeEnsino> lista = new ArrayList<>();
         Banco banco = new Banco(context);
         SQLiteDatabase db = banco.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status, observacao FROM gestaoDeEnsino WHERE status = 'Reprovado'" , null );
+        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status, observacao, data FROM gestaoDeEnsino WHERE status = 'Reprovado'" , null );
         if( cursor.getCount() > 0 ){
             cursor.moveToFirst();
             do{
@@ -188,6 +194,7 @@ public class GestaoDeEnsinoDAO {
                 gestaoDeEnsino.notaFinal = cursor.getDouble(9);
                 gestaoDeEnsino.status = cursor.getString(10);
                 gestaoDeEnsino.observacao = cursor.getString(11);
+                gestaoDeEnsino.data = cursor.getString(12);
                 lista.add(gestaoDeEnsino);
             }while( cursor.moveToNext() );
         }
@@ -198,7 +205,7 @@ public class GestaoDeEnsinoDAO {
         List<GestaoDeEnsino> lista = new ArrayList<>();
         Banco banco = new Banco(context);
         SQLiteDatabase db = banco.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status, observacao FROM gestaoDeEnsino WHERE status = 'Aprovado'" , null );
+        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status, observacao, data FROM gestaoDeEnsino WHERE status = 'Aprovado'" , null );
         if( cursor.getCount() > 0 ){
             cursor.moveToFirst();
             do{
@@ -215,6 +222,7 @@ public class GestaoDeEnsinoDAO {
                 gestaoDeEnsino.notaFinal = cursor.getDouble(9);
                 gestaoDeEnsino.status = cursor.getString(10);
                 gestaoDeEnsino.observacao = cursor.getString(11);
+                gestaoDeEnsino.data = cursor.getString(12);
                 lista.add(gestaoDeEnsino);
             }while( cursor.moveToNext() );
         }
@@ -224,7 +232,7 @@ public class GestaoDeEnsinoDAO {
     public static GestaoDeEnsino getAlunoById(Context context, int id) {
         Banco banco = new Banco(context);
         SQLiteDatabase db = banco.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status, observacao   FROM gestaoDeEnsino WHERE id = " + id, null);
+        Cursor cursor = db.rawQuery("SELECT id, nomeAluno, matricula, substitutiva, nota1, nota2, aprovado, reprovado, recuperacao, notaFinal, status, observacao, data   FROM gestaoDeEnsino WHERE id = " + id, null);
         if (cursor.getCount() > 0) {
             cursor.moveToFirst();
             GestaoDeEnsino gestaoDeEnsino = new GestaoDeEnsino();
@@ -240,6 +248,7 @@ public class GestaoDeEnsinoDAO {
             gestaoDeEnsino.notaFinal = cursor.getDouble(9);
             gestaoDeEnsino.status = cursor.getString(10);
             gestaoDeEnsino.observacao = cursor.getString(11);
+            gestaoDeEnsino.data = cursor.getString(12);
             return gestaoDeEnsino;
         } else {
             return null;

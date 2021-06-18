@@ -14,6 +14,16 @@ public class GestaoDeEnsino extends AppCompatActivity {
     public int aprovado;
     public int reprovado;
     public int recuperacao;
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String data;
     public Double notaFinal;
     public String status;
 
@@ -102,7 +112,7 @@ public class GestaoDeEnsino extends AppCompatActivity {
 
     }
 
-    public GestaoDeEnsino(int id, String nomeAluno, String observacao,int recuperacao, int aprovado, int reprovado, Double notaFinal, String status, int nota1, int nota2, String substitutiva, String matricula) {
+    public GestaoDeEnsino(int id, String nomeAluno, String data,String observacao,int recuperacao, int aprovado, int reprovado, Double notaFinal, String status, int nota1, int nota2, String substitutiva, String matricula) {
         this.id = id;
         this.nomeAluno = nomeAluno;
         this.nota1 = nota1;
@@ -110,6 +120,7 @@ public class GestaoDeEnsino extends AppCompatActivity {
         this.aprovado = aprovado;
         this.reprovado = reprovado;
         this.recuperacao = recuperacao;
+        this.data = data;
         this.notaFinal = notaFinal;
         this.matricula = matricula;
         this.observacao = observacao;
